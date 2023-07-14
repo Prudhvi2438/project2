@@ -1,4 +1,4 @@
-git stapackage com;
+package com;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 class TestCalculator {
-	
+
 	@Test
 	public void testSum() {
 		int a =10;
@@ -23,12 +23,12 @@ class TestCalculator {
 		int actualSum = calc.sum(a, b);
 		assertEquals(sum, actualSum);
 	}
-	
+
 	@Test
 	public void printHello() {
 		System.out.println("hello");
 	}
-	
+
 	@Test
     @DisplayName("My First Test")
     void myFirstTest(TestInfo testInfo) {
